@@ -7,9 +7,10 @@ Student Scholarship Monitoring and Academic Compliance System
 **GitHub Repository URL:** https://github.com/keancrusader21-hue/ScholarshipMonitoring
 ## Demo account (Scholar)
 
-| Email | Password |
-|---|---|
-| admin@gmail.com | admin123 |
+Name   |Email              | Password   |
+admin  | admin@gmail.com   | admin123   | Scholar
+raffy  | raffy@gmail.com   | raffy12345 | Staff
+kean   | kean@gmail.com    | kean12345  | Admin
 
 
 
