@@ -14,8 +14,10 @@
   <div class="me"><span id="who"></span><button id="logout" class="alt">Log out</button></div></aside>
  <main id="view"></main>
 </div><p id="toast"></p>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script><script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js">
+</script><script src="app.js"></script>
 <script>
 const tone=t=>/^(Compliant|Renewed|Verified)/.test(t)?'ok':/^(With|Probation)/.test(t)?'warn':/^(Disqualified|Rejected)/.test(t)?'bad':'info';
 new MutationObserver(()=>document.querySelectorAll('.tag:not([data-t])').forEach(e=>e.dataset.t=tone(e.textContent))).observe(document.getElementById('view'),{childList:true,subtree:true});
+new MutationObserver(()=>{const m=document.getElementById('authmsg');m.classList.toggle('ok',m.textContent.startsWith('Account created'))}).observe(document.getElementById('authmsg'),{childList:true,characterData:true,subtree:true});
 </script></body></html>

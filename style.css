@@ -48,3 +48,4 @@ td button{padding:6px 10px;font-size:13px;margin-right:4px}
  #app{grid-template-columns:1fr}aside{position:static;height:auto;padding:12px}
  .brand{border:0;padding:0 6px 8px;margin:0;font-size:18px}nav{flex-direction:row;overflow-x:auto}nav button{border-left:0;border-bottom:3px solid transparent;border-radius:6px 6px 0 0}nav button.on{border-bottom-color:var(--gold)}
  .me{flex-direction:row;align-items:center;justify-content:space-between;margin-top:8px;padding:10px 6px 0}main{padding:20px 14px 50px}}
+.msg.ok{color:var(--ok)}
